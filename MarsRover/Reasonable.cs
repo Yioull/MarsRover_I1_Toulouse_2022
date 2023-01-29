@@ -1,19 +1,16 @@
 ﻿using MarsRover.Commandes;
 using MarsRover.Utilities;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
+//couche anti corruption
 namespace MarsRover
 {
     public class Reasonable
     {
         private Rover rover = new RoverBuilder()
-               .SurUnePlanète(planète => planète.ToriqueDeTailleX(4).AyantUnObstacle(0, 3))
+               .SurUnePlanète(planète => planète.SphériqueDeTailleX(2))
                .Positionné(0, 0)
-               .Orienté(Orientation.Nord)
+               .Orienté(Orientation.Est)
                .Build();
         public String AvancerCommande() => "Ma position est: " + rover.Traiter(new AvancerCommande()).Position;
         public String TourneAGaucheCommande() => "Ma position est: " + rover.Traiter(new TourneAGaucheCommande()).Position;

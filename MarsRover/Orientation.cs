@@ -4,12 +4,16 @@ namespace MarsRover
 {
     public class Orientation
     {
-        public static Orientation Nord = new ();
-        public static Orientation Est = new ();
-        public static Orientation Sud = new();
-        public static Orientation Ouest = new();
+        public static Orientation Nord = new ("nord");
+        public static Orientation Est = new ("est");
+        public static Orientation Sud = new("sud");
+        public static Orientation Ouest = new("ouest");
 
-        private Orientation(){}
+        private Orientation(string orientation)
+        {
+            Value = orientation;
+        }
+        public String Value { get; set; }
 
         public Orientation MouvementDextrogyre
         {
@@ -36,5 +40,6 @@ namespace MarsRover
                 throw new NotSupportedException();
             }
         }
+
     }
 }

@@ -16,5 +16,10 @@
 
         /// <inheritdoc />
         public bool PossèdeUnObstacle(Point point) => false;
+
+        public string TypePlanète()
+        {
+            return "tore";
+        }
     }
 }

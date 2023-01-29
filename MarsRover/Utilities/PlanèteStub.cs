@@ -7,5 +7,7 @@
 
         /// <inheritdoc />
         public bool PossèdeUnObstacle(Point point) => default;
+
+        public string TypePlanète() => "";
     }
 }

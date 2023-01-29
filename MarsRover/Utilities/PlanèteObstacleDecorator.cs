@@ -19,5 +19,10 @@
         {
             return point == _obstacle || _planète.PossèdeUnObstacle(point);
         }
+
+        public string TypePlanète()
+        {
+            return _planète.TypePlanète();
+        }
     }
 }
