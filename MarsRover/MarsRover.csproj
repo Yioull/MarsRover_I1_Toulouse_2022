@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+	<ApplicationIcon />
+	<OutputType>Exe</OutputType>
+	<StartupObject>MarsRover.MarsRoverMain</StartupObject>
   </PropertyGroup>
 
 </Project>

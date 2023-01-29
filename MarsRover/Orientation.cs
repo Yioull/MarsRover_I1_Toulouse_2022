@@ -1,4 +1,6 @@
-﻿namespace MarsRover
+﻿using System;
+
+namespace MarsRover
 {
     public class Orientation
     {
